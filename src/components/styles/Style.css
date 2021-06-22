@@ -1,0 +1,28 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+}
+
+.column{
+    display:flex ;
+    align-items:center ;
+    justify-content:center;
+    width:100%;
+    flex-direction:column;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row;
+    width:100%;
+    background-color:rgb(168, 168, 168);
+}
+
