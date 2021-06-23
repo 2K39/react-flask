@@ -6,17 +6,11 @@ import logo from './media/logo.jpg'
 import './styles/Style.css'
 
 function App(){
-  let nav = [
-    {name:'yahoo' , site:"https://www.google.com.sa/"},
-    {name:'home' , site:'https://www.google.com/'}
-  ]
-  let gitLogo = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png'
+  let nav = []
 
   return(
      <div className='column'>
-        <Nav logo={logo} nav={nav}/>
-        <Box text='ipsom lorem' src={cat} reverse='true'/>
-        <Box src={gitLogo}/>
+        <Nav nav={nav} logo={cat}/>
     </div>
 )}
 
