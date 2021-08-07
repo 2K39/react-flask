@@ -1,0 +1,1 @@
+cd app && python -m venv env && env/acripts/activate && pip install -r requirements.txt

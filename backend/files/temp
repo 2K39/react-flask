@@ -1,0 +1,17 @@
+from flask_wtf import FlaskForm
+from wtforms import StringField , PasswordField
+from flask_wtf.file import FileField, FileRequired 
+from wtforms.validators import DataRequired , url
+from flask_wtf.html5 import URLField
+from dataclasses import dataclass , asdict
+
+@user.route('/view')
+def view():
+    return str(User.query.first().username)
+
+@user.route('/add_user')
+def add_user():
+    new_user = User(username='ahmed' , password = "abc")
+    db.session.add(new_user)
+    db.session.commit()
+    return '200'
